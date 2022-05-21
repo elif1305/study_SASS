@@ -1,0 +1,46 @@
+sass ve scss ek dillerini kullnamak icin node.js
+
+node.js kullanmamak icin live sass compiler extentenson ile de yapilabliri.
+
+sass ve scss farki: yazildigi diller, suslu parantezve noktali virgul kullanimi
+scss( suslu parantez ve noktali virgul kullanimi var)
+
+bizim kullandigimiz scss.
+
+1- nasting yazilim yapabliyoruz.
+2- variable kullanimi yapabliyioruz.
+3- partials kullannimi 
+or:
+_nav.scss
+_header.scss
+_reset.scss
+
+bunlari :
+index.scss e @import ile ekliyoruz.
+
+4.mixins (fonksiyon yazma giib)
+
+@include ile cagilir.
+
+5- inheritance
+@extend ile cagrilir
+
+
+
+kurulumu icin ;
+
+1- node.js yuklenmeli LTS versiyonu
+https://nodejs.org/en/
+
+2- scss intro dosyasinin(vs code da islemleri yaptigin dosyanin ustune gel) ustunde saga tikla open in integrated terminal e tikla.
+
+default olarak git bash acilmiyorsa. ;
+
+vscodeda - view -commetn palet - selesct default terminal e tikla.- git bash i default yap.
+
+(npm install -g sass  komutu ıle once kurman gerekıyor,  1 kez yapmak yeterli)
+
+sass --watch index.scss:index.css
+
+Sass is watching for changes. Press Ctrl-C to stop. yani kapatsanda gitbashi sorun yok. ctrl + c yapanakadar izlemeey devam eder.
+
