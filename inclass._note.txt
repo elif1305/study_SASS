@@ -1,0 +1,76 @@
+
+terminali ac
+sass --watch style.scss:style.css
+durdurmak icin ctrl + c
+
+extension ile sass;
+partial dosyalara isim verirken basina _ koymayi unutma.
+live sass compiler yukle vscodea
+vscodun altina watch sass diye bise geliyor,
+css dosyasinin ustune gel , altta cikan watcha bas.
+
+
+
+sass projesine baslarken ;
+
+-klasor yapini vscode da duzenli bir sekilde olustur.
+-partial dosyalara isim verirken basina _ koymayi unutma.
+terminali ac (main css in oldugu dosyada terminali ac)
+sass --watch main.scss:main.css
+
+ornek 1:
+--css
+--img
+--scss
+
+ -components
+   -_footer.scss
+   -_nav.scss
+   -_responsive.scss
+ -pages
+ -base
+  - _reset.scss
+--pages
+ -_about.scss
+ -_contact.scss
+ -_projects.scss
+ -_home.scss
+ -main.scss
+--index.html
+
+ornek 2:
+|----images             
+|----solution
+        |----index.html  
+        |----css (folder)   
+              |----style.css  
+              |----style.css.map  
+        |----scss (folder)   
+              |----abstracts (folder) 
+                    |----_mixin.scss 
+                    |----_variables.scss 
+              |----base (folder) 
+                    |----_reset.scss               
+              |----components (folder) 
+                    |----_footer.scss 
+                    |----_nav.scss 
+                    |----_responsive.scss 
+              |----pages (folder) 
+                    |----_about.scss 
+                    |----_contact.scss 
+                    |----_home.scss 
+                    |----_projects.scss 
+              |----main.scss  
+        |----img (folder)
+
+
+
+- main.css e import ederken
+@import './base/reset.scss'
+@import './base/reset.scss', './base/footer', './abstract/variables' , 'mixin'
+@import "./base/reset";
+@import './abstracts/mixin', './abstracts/variables';
+@import './components/footer', './components/nav', './components/responsive';
+@import './pages/about', './pages/contact', './pages/home', './pages/projects';
+
+
