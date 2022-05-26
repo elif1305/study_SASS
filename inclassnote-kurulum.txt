@@ -1,0 +1,45 @@
+====================
+    SASS-SCSS
+====================
+
+- css extension language
+- farklari ; suslu parantez kullanimi(scss)
+
+kurulumu;
+
+1. YONTEM ; node.js ile
+-------------------------
+
+1- NODE.JS INDIR
+https://nodejs.org/en/ 
+
+LTS versiyonunu indir.
+
+2-kurulup kurulmadigini kontrol etmek icin;
+git bash ac
+'node --version' yaz
+kurulu olan versiyonu yazacaktir.
+
+3-yine git bashe gel
+' npm install -g sass ' => sass sadece bir uygulama icin degil global olarak kur demek.
+
+4-kurdu mu diye kontrol etmek icin:
+' sass --version ' yaz.
+
+5- vs code u ac.
+index.html
+style.scss olustur. (ya da projeni ac)
+
+6- index.html de;
+link olarak style.css i ekle. ( style.scss i ekleme cunku link bunu anlamaz, css olmasi gerekir.)
+
+
+7- vs code da terminali ac; ( dogru dosyada terminali acmak onemli. style.scss nerede ise , hangi dosyanin icinde ise terminali orada acmak gerekiyor.)
+(eger bash de acilmazsa , terminalin sag ustundeki + nin yanindaki kucuk ok isaretine bas, ordan git bash i sec.
+
+' sass --watch style.scss:style.css ' komutunu yaz   ( style.scss dosyasini style.css e cevir demek)
+
+8- COMPILED .....  yazisini gorduysen tamamdir demektir.
+izlemeyi durdurmak icin CTRL+C yapilir.
+
+not; yanlisikla durdurdun diyelim, yeniden sass --watch style.scss:style.css  bu komutu yazacaksin.
